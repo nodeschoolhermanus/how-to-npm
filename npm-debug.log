@@ -1,0 +1,88 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@3.3.12
+3 info using node@v0.12.7
+4 verbose node symlink /usr/local/bin/node
+5 verbose publish [ '.' ]
+6 silly cache add args [ '.', null ]
+7 verbose cache add spec .
+8 silly cache add parsed spec { raw: '.',
+8 silly cache add   scope: null,
+8 silly cache add   name: null,
+8 silly cache add   rawSpec: '.',
+8 silly cache add   spec: '/Users/nomad/Desktop/how-to-npm',
+8 silly cache add   type: 'directory' }
+9 verbose addLocalDirectory /Users/nomad/.npm/@nodeschoolhermanus/how-to-npm/1.0.0/package.tgz not in flight; packing
+10 info lifecycle @nodeschoolhermanus/how-to-npm@1.0.0~prepublish: @nodeschoolhermanus/how-to-npm@1.0.0
+11 silly lifecycle @nodeschoolhermanus/how-to-npm@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/nomad/.npm/@nodeschoolhermanus/how-to-npm/1.0.0/package.tgz',
+12 verbose tar pack   '/Users/nomad/Desktop/how-to-npm' ]
+13 verbose tarball /Users/nomad/.npm/@nodeschoolhermanus/how-to-npm/1.0.0/package.tgz
+14 verbose folder /Users/nomad/Desktop/how-to-npm
+15 verbose addLocalTarball adding from inside cache /Users/nomad/.npm/@nodeschoolhermanus/how-to-npm/1.0.0/package.tgz
+16 silly cache afterAdd @nodeschoolhermanus/how-to-npm@1.0.0
+17 verbose afterAdd /Users/nomad/.npm/@nodeschoolhermanus/how-to-npm/1.0.0/package/package.json not in flight; writing
+18 verbose afterAdd /Users/nomad/.npm/@nodeschoolhermanus/how-to-npm/1.0.0/package/package.json written
+19 silly publish { name: '@nodeschoolhermanus/how-to-npm',
+19 silly publish   version: '1.0.0',
+19 silly publish   description: 'Practice for npm module management',
+19 silly publish   main: 'index.js',
+19 silly publish   scripts: { test: 'node test.js' },
+19 silly publish   author: { name: 'nodeschoolhermanus' },
+19 silly publish   license: 'MIT',
+19 silly publish   dependencies: { '@linclark/pkg': '^1.0.2' },
+19 silly publish   devDependencies: {},
+19 silly publish   repository:
+19 silly publish    { type: 'git',
+19 silly publish      url: 'git+https://github.com/nodeschoolhermanus/how-to-npm.git' },
+19 silly publish   keywords: [ 'npm', 'git', 'nodeschool' ],
+19 silly publish   readme: '\nThis is a readme file.\n',
+19 silly publish   readmeFilename: 'README.md',
+19 silly publish   bugs: { url: 'https://github.com/nodeschoolhermanus/how-to-npm/issues' },
+19 silly publish   homepage: 'https://github.com/nodeschoolhermanus/how-to-npm#readme',
+19 silly publish   _id: '@nodeschoolhermanus/how-to-npm@1.0.0',
+19 silly publish   _shasum: 'a5547af02e8be59cb78b4b52c7bce026d3cb642b',
+19 silly publish   _from: '.' }
+20 verbose getPublishConfig undefined
+21 silly mapToRegistry name @nodeschoolhermanus/how-to-npm
+22 silly mapToRegistry scope (from package name) @nodeschoolhermanus
+23 verbose mapToRegistry no registry URL found in name for scope @nodeschoolhermanus
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry http://localhost:15443/
+26 silly mapToRegistry uri http://localhost:15443/@nodeschoolhermanus%2fhow-to-npm
+27 verbose publish registryBase http://localhost:15443/
+28 silly publish uploading /Users/nomad/.npm/@nodeschoolhermanus/how-to-npm/1.0.0/package.tgz
+29 verbose request uri http://localhost:15443/@nodeschoolhermanus%2fhow-to-npm
+30 verbose request sending authorization for write operation
+31 info attempt registry request try #1 at 13:31:03
+32 verbose request id aff9fb5e740d9a7a
+33 http request PUT http://localhost:15443/@nodeschoolhermanus%2fhow-to-npm
+34 info retry will retry, error on last attempt: Error: connect ECONNREFUSED
+35 info attempt registry request try #2 at 13:31:13
+36 http request PUT http://localhost:15443/@nodeschoolhermanus%2fhow-to-npm
+37 info retry will retry, error on last attempt: Error: connect ECONNREFUSED
+38 info attempt registry request try #3 at 13:32:13
+39 http request PUT http://localhost:15443/@nodeschoolhermanus%2fhow-to-npm
+40 verbose request invalidating /Users/nomad/.npm/localhost_15443/_40nodeschoolhermanus_252fhow-to-npm on PUT
+41 error publish Failed PUT undefined
+42 verbose stack Error: connect ECONNREFUSED
+42 verbose stack     at exports._errnoException (util.js:746:11)
+42 verbose stack     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1010:19)
+43 verbose cwd /Users/nomad/Desktop/how-to-npm
+44 error Darwin 15.2.0
+45 error argv "node" "/usr/local/bin/npm" "publish"
+46 error node v0.12.7
+47 error npm  v3.3.12
+48 error code ECONNREFUSED
+49 error errno ECONNREFUSED
+50 error syscall connect
+51 error Error: connect ECONNREFUSED
+51 error     at exports._errnoException (util.js:746:11)
+51 error     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1010:19)
+51 error  { [Error: connect ECONNREFUSED]
+51 error   code: 'ECONNREFUSED',
+51 error   errno: 'ECONNREFUSED',
+51 error   syscall: 'connect' }
+52 error If you are behind a proxy, please make sure that the
+52 error 'proxy' config is set properly.  See: 'npm help config'
+53 verbose exit [ 1, true ]

@@ -1,0 +1,24 @@
+{
+  "name": "@nodeschoolhermanus/how-to-npm",
+  "version": "1.0.0",
+  "description": "Practice for npm module management",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "nodeschoolhermanus",
+  "license": "MIT",
+  "dependencies": {
+    "@linclark/pkg": "^1.0.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nodeschoolhermanus/how-to-npm.git"
+  },
+  "keywords": [
+    "npm",
+    "git",
+    "nodeschool"
+  ]
+}
